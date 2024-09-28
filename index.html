@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LOGIN Page</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="company-name">TOURISM</div>
+    <div class="signin-container">
+        
+        <h2>Sign in to TOURISM</h2>
+        <h3>Your personalized Ai assistent</h3>
+        <form>
+            <input type="email" placeholder="Enter your email">
+            <input type="password" placeholder="Enter  your password">
+            <button class="button">
+                <div class="button" onclick="handleLogin()">
+                <div class="blob1"></div>
+                <div class="blob2"></div>
+                <div class="inner">SIGN IN</div>
+              </button>
+        </form>
+    </div>
+    <script>
+        function handleLogin() {
+            // Implement login logic here
+            // For example, you can send a POST request to a server
+            // with the email and password to authenticate the user
+            alert("Login successful!");
+        }
+
+        function showSignupForm() {
+            var loginForm = document.getElementById("loginForm");
+            var signupForm = document.getElementById("signupForm");
+            loginForm.style.display   
+ = "none";
+            signupForm.style.display = "block";
+        }
+    </script>
+</body>
+</html>
